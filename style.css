@@ -1,0 +1,130 @@
+body {
+  background-color: #2b2e4a;
+  font-size: 0.875rem;
+  color: lightgray;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.site-title {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border-bottom: 2px solid slategray;
+  border-bottom-style: dotted;
+  padding-bottom: 10px;
+}
+
+.item {
+  display: flex;
+  /* padding: 5px 0; */
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+input {
+  /* padding-bottom: 1.4rem; */
+  background-color: #2b2e4a;
+  color: lightgray;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 3px solid slategray;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #2b2e4a inset;
+  -webkit-text-fill-color: lightgray;
+}
+
+.input-name {
+  width: 25%;
+  letter-spacing: 2px;
+}
+
+.input-value {
+  width: 75%;
+}
+
+p {
+  margin: 0;
+}
+
+#ul {
+  margin: 0;
+  list-style-position: inside;
+  list-style-type: square;
+  padding-left: 0;
+  font-size: 0.75rem;
+}
+
+#ul li {
+  margin-bottom: 3px;
+}
+
+#ul span {
+  display: inline-block;
+  width: 3rem;
+}
+
+div.item:nth-child(6) {
+  height: 50px;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+div.input-value > label:nth-child(2) {
+  margin-left: 15px;
+}
+
+div.input-value > label:nth-child(3) {
+  margin: 0 8px;
+}
+
+div.item:nth-child(6) #submit {
+  background-color: lightgray;
+  color: #2b2e4a;
+  border: 2px solid #575757;
+  border-radius: 5px;
+  width: 120px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding-left: 8px;
+  box-shadow: 0 3px #575757;
+}
+
+div.item:nth-child(6) #submit:active {
+  transform: translate3d(0, 3px, 0);
+  box-shadow: none;
+}
+
+#ol {
+  margin: 10px auto 0;
+}
+
+.li-wrapper {
+  display: flex;
+  letter-spacing: 3px;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#ol li {
+  padding-top: 3px;
+  text-align: center;
+}
