@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>hogehoge</title>
+</head>
+<body>
+  <div class="container">
+
+
+    <header id="header">
+      <h1 class="site-title">hogehoge</h1>
+    </header>
+
+
+    <main id="main">
+      <form action="/form" method="post" name="form" id="form" onsubmit="return startFilling()">
+
+
+        <div class="item">
+          <label for="user" class="input-name">UserID:</label>
+          <input type="text" id="user" name="user" class="input-value" placeholder="login">
+        </div>
+        <div class="item">
+          <label for="pass" class="input-name">Password:</label>
+          <input type="password" id="pass" name="pass" class="input-value" placeholder="login">
+        </div>
+        <div class="item">
+          <label for="detail" class="input-name">Detail:</label>
+          <p class="input-value">hogehogehogehoge</p>
+          <input type="hidden" id="detail" name="detail" value="hogehogehoge">
+        </div>
+        <div class="item">
+          <label for="policy" class="input-name" id="policies[]">Policy:</label>
+          <ul id="ul">
+            <li>
+              <label>
+                <span>hoge</span>
+                <input type="checkbox" name="policies[]" value="hoge1" checked>
+                hoge1
+              </label>
+            </li>
+            <li>
+              <label>
+                <span>hoge</span>
+                <input type="checkbox" name="policies[]" value="hoge2" checked>
+                hoge2
+              </label>
+              </li>
+            <li>
+              <label>
+                <span>hoge</span>
+                <input type="checkbox" name="policies[]" value="hoge3" checked>
+                hoge3
+              </label>
+            </li>
+            <li>
+              <label>
+                <span>moge</span>
+                <input type="checkbox" name="policies[]" value="hoge4">
+                hoge4
+              </label>
+              </li>
+            <li>
+              <label>
+                <span>moge</span>
+                <input type="checkbox" name="policies[]" value="hoge5">
+                hoge5
+              </label>
+            </li>
+            <li>
+              <label>
+                <span>moge</span>
+                <input type="checkbox" name="policies[]" value="hoge6">
+                hoge6
+              </label>
+            </li>
+            <li>
+              <label>
+                <span>moge</span>
+                <input type="checkbox" name="policies[]" value="hoge7">
+                hoge7
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <label for="day" class="input-name">Day:</label>
+          <div class="input-value" style="display: inline-block;">
+            <input type="date" id="day" name="day" required>
+            <label>昼<input type="radio" name="shift" value="昼" checked></label>
+            <label>夜<input type="radio" name="shift" value="夜-明"></label>
+            <button type="button" id="btn">create</button>
+          </div>
+        </div>
+        <div class="item">
+          <input type="submit" value="PLAY" id="submit">
+        </div>
+        <div class="item">
+          <ol id="ol"></ol>
+        </div>
+      </form>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
